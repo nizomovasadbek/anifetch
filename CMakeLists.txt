@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(app)
+include_directories(src)
+file(GLOB SOURCE "src/*.c")
+add_executable(app ${SOURCE})
+target_link_libraries(app m)
